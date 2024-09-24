@@ -87,6 +87,25 @@
             margin: 0 auto;
             display: block;
         }
+        .bins-image {
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* This creates a 16:9 aspect ratio */
+            background-image: url('bins_cleaned.png');
+            background-size: cover;
+            background-position: center;
+            margin: 2rem 0;
+        }
+        @media (min-width: 768px) {
+            .bins-image {
+                height: 600px; /* Increased height for larger screens */
+                padding-bottom: 0;
+            }
+        }
+        .welcome-text {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
     </style>
 </head>
 <body>
@@ -96,8 +115,12 @@
     </header>
     
     <main>
-        <h2>Welcome to South Georgia Bin Cleaners</h2>
-        <p>We sanitize empty trash bins and return them to your door on a subscription basis.</p>
+        <div class="welcome-text">
+            <h2>Welcome to South Georgia Bin Cleaners</h2>
+            <p>We sanitize empty trash bins and return them to your door on a subscription basis.</p>
+        </div>
+        
+        <div class="bins-image"></div>
         
         <div class="cta">
             <h3>Now Measuring Interest in Tifton, Georgia!</h3>
