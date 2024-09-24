@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Georgia Bin Cleaners</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            position: relative;
+        }
+        body::before {
+            content: '';
+            background-image: url('pine_Trees.png');
+            background-size: cover;
+            background-position: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.3;
+            filter: blur(2px);
+            z-index: -1;
+        }
+        header {
+            background-image: url('water_fountain_tifton.png');
+            background-size: cover;
+            background-position: center;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 4rem 1rem;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: inherit;
+            filter: blur(5px);
+            z-index: 0;
+        }
+        header * {
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            margin-bottom: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .tagline {
+            font-style: italic;
+            margin-top: 0.5rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        main {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+        .cta {
+            background-color: #3498db;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 5px;
+            margin: 2rem 0;
+        }
+        iframe {
+            width: 100%;
+            max-width: 640px;
+            height: 1068px;
+            border: none;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>South Georgia Bin Cleaners</h1>
+        <p class="tagline">Proudly serving South Georgia</p>
+    </header>
+    
+    <main>
+        <h2>Welcome to South Georgia Bin Cleaners</h2>
+        <p>We sanitize empty trash bins and return them to your door on a subscription basis.</p>
+        
+        <div class="cta">
+            <h3>Now Measuring Interest in Tifton, Georgia!</h3>
+            <p>If you would like us to clean and return your trash bins every week, please fill out the interest form below.</p>
+        </div>
+        
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScaQ_Oceb69N0rkLiIShdCZL3GXl8M5R0m62CZ7QlNPZkdXwg/viewform?embedded=true">Loading…</iframe>
+    </main>
+</body>
+</html>
